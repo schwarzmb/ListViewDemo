@@ -47,10 +47,12 @@ public class CourseAdapter extends BaseAdapter {
 
         TextView courseNumberView = rowView.findViewById(android.R.id.text1);
         TextView courseNameView = rowView.findViewById(android.R.id.text2);
+        //TextView courseInstructorView = rowView.findViewById(android.R.id.text)
 
         Course course = (Course) getItem(position);
         courseNumberView.setText(course.getCourseNumber());
         courseNameView.setText(course.getCourseName());
+
 
         return rowView;
     }
